@@ -7,4 +7,12 @@ const showAdvice= async()=>{
 
 document.addEventListener("DOMContentLoaded", showAdvice )
 const btn=document.querySelector(".btn")
-btn.addEventListener("click",showAdvice)
+const btnImg = document.querySelector(".btnImg");
+btn.addEventListener("click",()=>{
+    showAdvice();
+    btnImg.classList.add("animar");
+    btnImg.addEventListener("animationend", function handler() {
+        btnImg.classList.remove("animar");
+        btnImg.removeEventListener("animationend", handler);
+    });
+})

@@ -64,6 +64,16 @@ box-shadow: 0 0 25px var(--Green300);
     box-shadow: 0 0 35px var(--Green300);
 }
 
+.animar{
+    animation: rotate .8s linear;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
 @media (min-width:48rem) {
     .container{
         width: 480px;
