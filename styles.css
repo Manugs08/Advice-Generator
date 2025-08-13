@@ -23,9 +23,9 @@ body{
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 50px 50px 30px 50px;
+    padding: 50px 50px 60px 50px;
     width: 350px;
-    height: 330px;
+    height: clamp(auto,330px,340px);
     align-items: center;
     gap:15px;
     margin:110px auto;
@@ -67,7 +67,7 @@ box-shadow: 0 0 25px var(--Green300);
 @media (min-width:48rem) {
     .container{
         width: 480px;
-        height: 300px;
+        height: clamp(auto,300px,310px);
     }
     .advice{
         width: 120%;

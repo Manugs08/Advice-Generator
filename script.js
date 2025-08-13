@@ -5,5 +5,6 @@ const showAdvice= async()=>{
     document.querySelector(".adviceNumber").textContent=`ADVICE #${guidance.data.slip.id}`
 }
 
+document.addEventListener("DOMContentLoaded", showAdvice )
 const btn=document.querySelector(".btn")
 btn.addEventListener("click",showAdvice)
